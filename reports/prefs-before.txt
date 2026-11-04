@@ -1,0 +1,3 @@
+{"url":"/prefs?__proto__[admin]=true","status":200,"body":{"theme":"light","lang":"fr"},"polluted":false}
+{"url":"/prefs?constructor[prototype][admin]=true&theme[constructor][prototype][admin]=true","status":200,"body":{"theme":{"constructor":{"prototype":{"admin":"true"}}},"lang":"fr","constructor":{"prototype":{"admin":"true"}}},"polluted":false}
+{"url":"/prefs?admin=true","status":200,"body":{"theme":"light","lang":"fr","admin":"true"},"polluted":false}

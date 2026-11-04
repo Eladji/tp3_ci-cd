@@ -1,0 +1,17 @@
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-11-04T15:12:51+01:00","CreatedBy":"CMD [\"npm\" \"start\"]","CreatedSince":"5 minutes ago","ID":"4fb071e04d23","Size":"0B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-11-04T15:12:51+01:00","CreatedBy":"EXPOSE [3000/tcp]","CreatedSince":"5 minutes ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-11-04T15:12:51+01:00","CreatedBy":"RUN /bin/sh -c npm install # buildkit","CreatedSince":"5 minutes ago","ID":"\u003cmissing\u003e","Size":"9.07MB"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-11-04T15:12:47+01:00","CreatedBy":"COPY . . # buildkit","CreatedSince":"5 minutes ago","ID":"\u003cmissing\u003e","Size":"29.3MB"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-11-04T15:12:45+01:00","CreatedBy":"WORKDIR /app","CreatedSince":"5 minutes ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:18+01:00","CreatedBy":"CMD [\"node\"]","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:18+01:00","CreatedBy":"ENTRYPOINT [\"docker-entrypoint.sh\"]","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:18+01:00","CreatedBy":"COPY docker-entrypoint.sh /usr/local/bin/ # …","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"388B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:18+01:00","CreatedBy":"RUN /bin/sh -c set -ex   \u0026\u0026 export GNUPGHOME…","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"5.34MB"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:15+01:00","CreatedBy":"ENV YARN_VERSION=1.22.22","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:15+01:00","CreatedBy":"RUN /bin/sh -c ARCH= \u0026\u0026 dpkgArch=\"$(dpkg --p…","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"196MB"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:15+01:00","CreatedBy":"ENV NODE_VERSION=22.23.4","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"0B"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T05:17:05+01:00","CreatedBy":"RUN /bin/sh -c groupadd --gid 1000 node   \u0026\u0026…","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"8.94kB"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T04:15:32+01:00","CreatedBy":"RUN /bin/sh -c set -ex;  apt-get update;  ap…","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"588MB"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T03:23:00+01:00","CreatedBy":"RUN /bin/sh -c set -eux;  apt-get update;  a…","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"177MB"}
+{"Comment":"buildkit.dockerfile.v0","CreatedAt":"2026-10-28T02:39:34+01:00","CreatedBy":"RUN /bin/sh -c set -eux;  apt-get update;  a…","CreatedSince":"7 days ago","ID":"\u003cmissing\u003e","Size":"47.7MB"}
+{"Comment":"debuerreotype 0.17","CreatedAt":"2026-10-27T01:00:00+01:00","CreatedBy":"# debian.sh --arch 'amd64' out/ 'bookworm' '…","CreatedSince":"8 days ago","ID":"\u003cmissing\u003e","Size":"117MB"}

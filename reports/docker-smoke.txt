@@ -1,0 +1,4 @@
+uid=1000(node) gid=1000(node) groups=1000(node),1000(node)
+API sur le port 3000
+/health: 200, status=ok
+/ping: 200 (real BusyBox ping)

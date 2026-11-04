@@ -1,0 +1,5 @@
+name: API security
+paths:
+  - src
+queries:
+  - uses: security-extended

@@ -1,0 +1,16 @@
+
+> devsecops-tp@1.0.0 test
+> jest --ci --runInBand --coverage
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 |
+ app.js   |     100 |      100 |     100 |     100 |
+----------|---------|----------|---------|---------|-------------------
+
+Test Suites: 2 passed, 2 total
+Tests:       34 passed, 34 total
+Snapshots:   0 total
+Time:        0.513 s, estimated 1 s
+Ran all test suites.

@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-04",
+  "audit": {
+    "before": {
+      "info": 0,
+      "low": 7,
+      "moderate": 16,
+      "high": 5,
+      "critical": 0,
+      "total": 28
+    },
+    "after": {
+      "info": 0,
+      "low": 3,
+      "moderate": 16,
+      "high": 0,
+      "critical": 0,
+      "total": 19
+    },
+    "production": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "images": {
+    "before": {
+      "bytes": 1169809902,
+      "layers": 11,
+      "vulnerabilities": {
+        "HIGH": 532,
+        "CRITICAL": 20
+      },
+      "fixable": {
+        "HIGH": 85
+      },
+      "distinct_cves": 316
+    },
+    "after": {
+      "bytes": 172233334,
+      "layers": 9,
+      "vulnerabilities": {},
+      "fixable": {},
+      "distinct_cves": 0
+    }
+  },
+  "costs_usd": {
+    "A_x86_730h": "9.0100250",
+    "B_arm_730h": "7.2072900",
+    "C_x86_260h": "3.2090500",
+    "NAT_730h": "32.850"
+  }
+}
