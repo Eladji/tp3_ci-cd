@@ -1,0 +1,13 @@
+
+> devsecops-tp@1.0.0 test
+> jest --runInBand tests/app.test.js
+
+PASS tests/app.test.js
+  ✓ should return ok when calling /health (24 ms)
+  ✓ should greet the user when name is given (6 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        0.353 s, estimated 1 s
+Ran all test suites matching /tests\/app.test.js/i.

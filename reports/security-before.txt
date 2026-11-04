@@ -1,0 +1,65 @@
+
+> devsecops-tp@1.0.0 test
+> jest --runInBand tests/security.test.js
+
+FAIL tests/security.test.js
+  ✕ escapes HTML supplied to /hello (25 ms)
+  ✕ rejects shell commands before launching ping (5 ms)
+  ✕ rejects prototype-related input instead of merging untrusted preferences (3 ms)
+
+  ● escapes HTML supplied to /hello
+
+    expect(received).not.toContain(expected) // indexOf
+
+    Expected substring: not "<script>"
+    Received string:        "<h1>Bonjour <script>alert(1)</script></h1>"
+
+      13 |   const response = await request(app).get('/hello').query({ name: '<script>alert(1)</script>' });
+      14 |   expect(response.status).toBe(200);
+    > 15 |   expect(response.text).not.toContain('<script>');
+         |                             ^
+      16 |   expect(response.text).toContain('&lt;script&gt;alert(1)&lt;/script&gt;');
+      17 | });
+      18 |
+
+      at Object.toContain (tests/security.test.js:15:29)
+
+  ● rejects shell commands before launching ping
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 400
+    Received: 200
+
+      19 | test('rejects shell commands before launching ping', async () => {
+      20 |   const response = await request(app).get('/ping').query({ host: 'google.com;cat /etc/passwd' });
+    > 21 |   expect(response.status).toBe(400);
+         |                           ^
+      22 |   expect(exec).not.toHaveBeenCalled();
+      23 |   expect(execFile).not.toHaveBeenCalled();
+      24 | });
+
+      at Object.toBe (tests/security.test.js:21:27)
+
+  ● rejects prototype-related input instead of merging untrusted preferences
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 400
+    Received: 200
+
+      27 |   const response = await request(app)
+      28 |     .get('/prefs?constructor[prototype][admin]=true&theme[constructor][prototype][admin]=true');
+    > 29 |   expect(response.status).toBe(400);
+         |                           ^
+      30 |   expect({}.admin).toBeUndefined();
+      31 |   expect(response.body).not.toHaveProperty('constructor');
+      32 | });
+
+      at Object.toBe (tests/security.test.js:29:27)
+
+Test Suites: 1 failed, 1 total
+Tests:       3 failed, 3 total
+Snapshots:   0 total
+Time:        0.401 s, estimated 1 s
+Ran all test suites matching /tests\/security.test.js/i.
